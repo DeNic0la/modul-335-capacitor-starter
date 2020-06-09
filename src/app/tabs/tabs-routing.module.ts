@@ -8,27 +8,39 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'camera',
+        loadChildren: () => import('../camera/camera.module').then( m => m.CameraPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'geolocation',
+        loadChildren: () => import('../geolocation/geolocation.module').then( m => m.GeolocationPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'deviceinfo',
+        loadChildren: () => import('../deviceinfo/deviceinfo.module').then( m => m.DeviceinfoPageModule)
+      },
+      {
+        path: 'haptic',
+        loadChildren: () => import('../haptic/haptic.module').then( m => m.HapticPageModule)
+      },
+      {
+        path: 'notifier',
+        loadChildren: () => import('../notifier/notifier.module').then( m => m.NotifierPageModule)
+      },
+      {
+        path: 'other',
+        loadChildren: () => import('../other/other.module').then( m => m.OtherPageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/camera',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/camera',
     pathMatch: 'full'
   }
 ];
