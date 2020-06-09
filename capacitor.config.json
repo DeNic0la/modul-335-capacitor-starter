@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "Capacitor",
+  "appId": "ch.ictbz.capacitorstarter",
+  "appName": "Capacitor Starter",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

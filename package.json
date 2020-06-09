@@ -1,15 +1,16 @@
 {
-  "name": "capacitor",
+  "name": "modul-335-capacitor-starter",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Tom Enz <t@tomenz.ch>",
+  "homepage": "https://m335.ict-bz.ch",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build_ionic": "ionic build"
   },
   "private": true,
   "dependencies": {
@@ -52,5 +53,5 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   },
-  "description": "An Ionic project"
+  "description": "ICT BZ Capacitor Starter"
 }
