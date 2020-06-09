@@ -15,8 +15,12 @@ npm i
 ```
 
 ## Usage
-Edit/Add your regular capactior functions in the typescript code.
-Then you we need to run the Capacitor copy command, which copies all web assets (the Ionic Angular app in this case) into the native Android project:
+Edit/Add your regular capactior functions in the typescript code. Once your done with your code we need to build our Ionic application with:
+```bash
+ionic build
+```
+
+Then you we need to run the Capacitor ```copy``` command, which copies all web assets (the Ionic Angular app in this case) into the native Android project:
 ```bash
 npx cap copy
 ```

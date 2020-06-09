@@ -40,7 +40,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/camera',
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 ];
