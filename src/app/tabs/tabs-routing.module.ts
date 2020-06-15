@@ -32,15 +32,19 @@ const routes: Routes = [
         loadChildren: () => import('../other/other.module').then( m => m.OtherPageModule)
       },
       {
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
+      },
+      {
         path: '',
-        redirectTo: '/tabs/camera',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
