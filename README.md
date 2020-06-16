@@ -1,17 +1,17 @@
 # ICT-BZ: Capacitor Starter Template
 
 This a official starter template for using Ionic's capacatior native components used in M335.
-
+--
 ## Requirements
 * Node installed
 * Ionic installed
-* Android Studio installed
+* Android Studio with latest SDK installed
 
 ## Setup
 ```bash
 git clone <THISREPO.git>
 cd ./modul-335-capacitor-starter
-npm i
+npm install
 ```
 
 ## Usage
@@ -20,7 +20,12 @@ Edit/Add your regular capactior functions in the typescript code. Once your done
 ionic build
 ```
 
-Then you we need to run the Capacitor ```copy``` command, which copies all web assets (the Ionic Angular app in this case) into the native Android project:
+First we need to add Android to our project:
+```
+npx cap add android
+```
+
+Then you we need to run the Capacitor ```copy``` command, which copies all web assets from ```www``` folder (the Ionic Angular app in this case) into the native Android project:
 ```bash
 npx cap copy
 ```
