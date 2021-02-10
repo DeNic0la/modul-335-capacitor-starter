@@ -1,25 +1,35 @@
 <ion-content>
-  <ion-grid fixed>
+  <ion-grid fixed class="ion-padding">
     <ion-row>
-      <ion-col size="12"><img width="250px" src="./assets/ict-bz-logo.svg"></ion-col>
+      <ion-col size="12"
+        ><img width="200px" src="./assets/ict-bz-logo.svg"
+      /></ion-col>
       <ion-col size="12">
         Welcome to ICT-BZ's official capacitor starter template for M335.
-          <ul>
-            <li routerLink="/tabs/camera">Camera</li>
-            <li routerLink="/tabs/geolocation">Geolocation</li>
-            <li routerLink="/tabs/deviceinfo">DeviceInfo</li>
-            <li routerLink="/tabs/haptic">Haptic</li>
-            <li routerLink="/tabs/notifier">Notifier</li>
-            <li routerLink="/tabs/other">Other</li>
-          </ul>
-       </ion-col>
+        <ul>
+          <li routerLink="/tabs/camera">Camera</li>
+          <li routerLink="/tabs/geolocation">Geolocation</li>
+          <li routerLink="/tabs/deviceinfo">DeviceInfo</li>
+          <li routerLink="/tabs/haptic">Haptic</li>
+          <li routerLink="/tabs/notifier">Notifier</li>
+          <li routerLink="/tabs/other">Other</li>
+        </ul>
+      </ion-col>
     </ion-row>
     <ion-row>
       <ion-label> <h1>Demo: CopyToClipboard</h1></ion-label>
-      <ion-col size="10"><ion-input type="text" placeholder="Your Input" [(ngModel)]="inputText"></ion-input></ion-col>
-      <ion-col size="2"><ion-button (click)="copyInputTextToClipboard()" color="secondary">
-        Copy
-      </ion-button></ion-col>
+      <ion-col size="9"
+        ><ion-input
+          type="text"
+          placeholder="Your Input"
+          [(ngModel)]="inputText"
+        ></ion-input
+      ></ion-col>
+      <ion-col size="3"
+        ><ion-button (click)="copyInputTextToClipboard()" color="secondary">
+          Copy
+        </ion-button></ion-col
+      >
     </ion-row>
-  </ion-grid>  
+  </ion-grid>
 </ion-content>
